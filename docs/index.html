@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Basic SEO -->
+    <title>Network IDS | Система виявлення мережевих аномалій</title>
+    <meta name="description" content="Дослідження та розробка системи виявлення мережевих аномалій">
+    <meta name="keywords" content="IDS, мережеві аномалії, машинне навчання, Python, кібербезпека, intrusion detection system">
+    <meta name="author" content="Андрій">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phantom82git.github.io/network_ids/">
+    <meta property="og:title" content="Network IDS - Система виявлення мережевих аномалій">
+    <meta property="og:description" content="Дослідження та розробка системи виявлення мережевих аномалій">
+    <meta property="og:image" content="https://phantom82git.github.io/network_ids/images/ids-diagram.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://phantom82git.github.io/network_ids/">
+    <meta property="twitter:title" content="Network IDS - Система виявлення мережевих аномалій">
+    <meta property="twitter:description" content="Дослідження та розробка системи виявлення мережевих аномалій">
+    <meta property="twitter:image" content="https://phantom82git.github.io/network_ids/images/ids-diagram.svg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ResearchProject",
+            "name": "Network IDS - Система виявлення мережевих аномалій",
+            "description": "Дослідження та розробка системи виявлення мережевих аномалій",
+            "keywords": "IDS, мережеві аномалії, Python, кібербезпека",
+            "creator": {
+                "@type": "Person",
+                "name": "Андрій"
+            },
+            "url": "https://phantom82git.github.io/network_ids/"
+        }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Хедер з навігацією -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Головна навігація" class="container">
+            <div class="nav-brand">
+                <a href="/" aria-label="На головну">Network IDS</a>
+            </div>
+            <ul class="nav-menu" role="list">
+                <li role="listitem"><a href="#about" aria-current="page">Про проєкт</a></li>
+                <li role="listitem"><a href="#tasks">Завдання</a></li>
+                <li role="listitem"><a href="#results">Результати</a></li>
+                <li role="listitem"><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" id="main-content">
+        <!-- Hero секція -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 id="hero-title">
+                    <span lang="uk">Система виявлення мережевих аномалій</span>
+                    <small lang="en">Network Intrusion Detection System</small>
+                </h1>
+                <p class="hero-description">Дослідження та розробка інтелектуальної системи для виявлення кібератак у мережевому трафіку на основі методів машинного навчання</p>
+
+                <div class="keywords" aria-label="Ключові слова">
+                    <span class="keyword">#IDS</span>
+                    <span class="keyword">#Python</span>
+                    <span class="keyword">#CyberSecurity</span>
+                    <span class="keyword">#NetworkSecurity</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Актуальність -->
+        <section class="relevance" id="about" aria-labelledby="relevance-title">
+            <div class="container">
+                <h2 id="relevance-title">Актуальність теми</h2>
+                <div class="relevance-content">
+                    <div class="relevance-text">
+                        <p>У сучасному цифровому світі кількість кібератак постійно зростає. За даними CERT-UA, у 2026 році кількість інцидентів зросла на 60%. Традиційні системи захисту (сигнатурні IDS) не завжди здатні виявити нові, невідомі раніше атаки (zero-day exploits).</p>
+                        <p>Саме тому розробка інтелектуальних систем виявлення аномалій є критично важливою для забезпечення кібербезпеки сучасних організацій. Такий підхід дозволяє виявляти не тільки відомі атаки, але й нові, невідомі раніше загрози, аналізуючи відхилення від нормальної поведінки мережевого трафіку.</p>
+                    </div>
+                    <div class="relevance-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">60%</span>
+                            <span class="stat-label">Зростання атак у 2023</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Потрібен захист</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">0-day</span>
+                            <span class="stat-label">Невідомі загрози</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Мета дослідження -->
+        <section class="purpose" aria-labelledby="purpose-title">
+            <div class="container">
+                <h2 id="purpose-title">Мета дослідження</h2>
+                <div class="purpose-block">
+                    <p>Розробка ефективної системи виявлення мережевих аномалій для підвищення рівня захисту комп'ютерних мереж від сучасних кіберзагроз.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Завдання -->
+        <section class="tasks" id="tasks" aria-labelledby="tasks-title">
+            <div class="container">
+                <h2 id="tasks-title">Основні завдання</h2>
+                <ul class="tasks-list" role="list">
+                    <li role="listitem">Аналіз сучасних методів виявлення мережевих аномалій та існуючих IDS систем (Snort, Suricata, Zeek)</li>
+                    <li role="listitem">Збір та попередня обробка даних мережевого трафіку (NSL-KDD, CIC-IDS-2017, CSE-CIC-IDS-2018)</li>
+                    <li role="listitem">Розробка та порівняння моделей (Random Forest, XGBoost, Neural Networks) для класифікації мережевих атак</li>
+                    <li role="listitem">Створення прототипу системи виявлення аномалій на Python з використанням бібліотек scikit-learn, TensorFlow</li>
+                    <li role="listitem">Оцінка ефективності розробленої системи на реальних даних та порівняння з існуючими рішеннями</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Методологія з діаграмою -->
+        <section class="methodology" aria-labelledby="methodology-title">
+            <div class="container">
+                <h2 id="methodology-title">Методологія дослідження</h2>
+                <div class="methodology-content">
+                    <div class="methodology-image">
+                        <img src="images/ids-diagram.svg" alt="Діаграма архітектури системи виявлення мережевих аномалій" class="responsive-img">
+                    </div>
+                    <div class="methodology-steps">
+                        <ol role="list">
+                            <li role="listitem">Збір даних мережевого трафіку</li>
+                            <li role="listitem">Попередня обробка та нормалізація</li>
+                            <li role="listitem">Виділення ознак (feature engineering)</li>
+                            <li role="listitem">Валідація та тестування</li>
+                            <li role="listitem">Інтеграція в прототип IDS</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Очікувані результати -->
+        <section class="results" id="results" aria-labelledby="results-title">
+            <div class="container">
+                <h2 id="results-title">Очікувані результати</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-icon">💻</div>
+                        <h3>Програмний продукт</h3>
+                        <p>Прототип системи виявлення мережевих аномалій з відкритим кодом на Python, який можна використовувати для тестування та подальшого розвитку</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-icon">📄</div>
+                        <h3>Наукова стаття</h3>
+                        <p>Публікація результатів дослідження у фаховому виданні з описом запропонованої методики та порівняльним аналізом ефективності</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-icon">⚙️</div>
+                        <h3>Методологія</h3>
+                        <p>Розробка методики виявлення аномалій з високою точністю (Accuracy > 95%) та низьким рівнем хибних спрацьовувань</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-icon">📊</div>
+                        <h3>Датасет</h3>
+                        <p>Підготовлений та розмічений набір даних для навчання моделей виявлення мережевих аномалій</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакти -->
+        <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+            <div class="container">
+                <h2 id="contacts-title">Контакти</h2>
+                <div class="contacts-wrapper">
+                    <div class="university-info">
+                        <img src="images/university-logo.svg.png" alt="Логотип університету" class="university-logo">
+                        <h3>Сумський Державний Університет</h3>
+                        <p>Факультет інформаційних технологій</p>
+                        <p>Кафедра Інформатики</p>
+                    </div>
+                    <div class="student-info">
+                        <h3>Над проєктом працюють:</h3>
+                        <p><strong>Студент:</strong> Андрій Мірошніченко</p>
+                        <p><strong>Група:</strong> ІНз-21с</p>
+                        <p><strong>Науковий керівник:</strong> П'ятаченко Владислав</p>
+                        <p><strong>Email:</strong> andreymail428@gmail.com</p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/phantom82git/network_ids" target="_blank" rel="noopener noreferrer">phantom82git/network_ids</a></p>
+                        <p><strong>Рік:</strong> 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Network IDS. Всі права захищені.</p>
+                <p>Дослідницький проєкт у рамках курсу "Технічна підтримка програмного забезпечення"</p>
+                <p>
+                    <a href="https://github.com/phantom82git/network_ids" target="_blank" rel="noopener noreferrer">GitHub</a> |
+                    <a href="sitemap.xml">Sitemap</a> |
+                    <a href="robots.txt">robots.txt</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript для адаптивного меню -->
+    <script src="js/main.js"></script>
+</body>
+</html>

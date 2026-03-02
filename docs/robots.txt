@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phantom82git.github.io/network_ids/sitemap.xml

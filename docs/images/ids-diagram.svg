@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .box { fill: #e2e8f0; stroke: #2563eb; stroke-width: 2; rx: 10; ry: 10; }
+        .arrow { stroke: #94a3b8; stroke-width: 2; marker-end: url(#arrowhead); }
+        text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #1f2937; }
+        .title { font-size: 16px; font-weight: bold; fill: #2563eb; }
+    </style>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+            <polygon points="0 0, 10 5, 0 10" fill="#94a3b8" />
+        </marker>
+    </defs>
+    
+    <!-- Заголовок -->
+    <text x="400" y="30" text-anchor="middle" class="title">Архітектура системи виявлення мережевих аномалій</text>
+    
+    <!-- Етап 1: Мережевий трафік -->
+    <rect x="50" y="70" width="140" height="80" class="box" />
+    <text x="120" y="110" text-anchor="middle">Мережевий</text>
+    <text x="120" y="130" text-anchor="middle">трафік</text>
+    
+    <!-- Етап 2: Збір даних -->
+    <rect x="250" y="70" width="140" height="80" class="box" />
+    <text x="320" y="110" text-anchor="middle">Збір та</text>
+    <text x="320" y="130" text-anchor="middle">фільтрація</text>
+    
+    <!-- Етап 3: Виділення ознак -->
+    <rect x="450" y="70" width="140" height="80" class="box" />
+    <text x="520" y="110" text-anchor="middle">Feature</text>
+    <text x="520" y="130" text-anchor="middle">Engineering</text>
+    
+    <!-- Етап 4: ML модель -->
+    <rect x="610" y="150" width="140" height="80" class="box" fill="#bfdbfe" />
+    <text x="680" y="190" text-anchor="middle">ML Модель</text>
+    
+    <!-- Етап 5: Нормальний трафік -->
+    <rect x="150" y="250" width="140" height="80" class="box" fill="#86efac" />
+    <text x="220" y="290" text-anchor="middle">✓ Нормальний</text>
+    <text x="220" y="310" text-anchor="middle">трафік</text>
+    
+    <!-- Етап 6: Аномалія -->
+    <rect x="450" y="250" width="140" height="80" class="box" fill="#fca5a5" />
+    <text x="520" y="290" text-anchor="middle">⚠ Виявлена</text>
+    <text x="520" y="310" text-anchor="middle">аномалія/атака</text>
+    
+    <!-- Стрілки -->
+    <line x1="190" y1="110" x2="250" y2="110" class="arrow" />
+    <line x1="390" y1="110" x2="450" y2="110" class="arrow" />
+    <line x1="590" y1="110" x2="610" y2="150" class="arrow" />
+    <line x1="680" y1="230" x2="520" y2="250" class="arrow" />
+    <line x1="680" y1="230" x2="220" y2="250" class="arrow" />
+    
+    <!-- Пояснення -->
+    <text x="400" y="370" text-anchor="middle" fill="#6b7280">Система аналізує трафік в реальному часі та виявляє аномалії</text>
+</svg>
