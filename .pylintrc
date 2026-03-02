@@ -30,10 +30,10 @@ disable =
     W0612,
     W0611,
     C0301,
-    W0401,    # додай це (wildcard-import)
-    W0614,    # додай це (unused-wildcard-import)
-    E0602,    # додай це (undefined-variable)
-    W1514     # додай це (unspecified-encoding)
+    W0401,    
+    W0614,   
+    E0602,
+    W1514,
     C0114,  # missing-module-docstring
     C0115,  # missing-class-docstring
     C0116,  # missing-function-docstring
