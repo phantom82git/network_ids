@@ -1,34 +1,10 @@
 [7;33m************* Module /home/andreym/Документы/network_ids/.pylintrc[0m
 .pylintrc:1:0: E0015: [1;31mUnrecognized option found: max-complexity, max-methods[0m ([1;31munrecognized-option[0m)
-[7;33m************* Module detector[0m
-network_ids/detector.py:2:0: W0401: [35mWildcard import config[0m ([35mwildcard-import[0m)
-network_ids/detector.py:2:0: W0614: [35mUnused import(s) PCAP_FILE and LOG_FILE from wildcard import of config[0m ([35munused-wildcard-import[0m)
+.pylintrc:1:0: W0012: [35mUnknown option value for '--disable', expected a valid pylint message and got 'W1514
+C0114'[0m ([35munknown-option-value[0m)
 [7;33m************* Module logger[0m
 network_ids/logger.py:6:9: W1514: [35mUsing open without explicitly specifying an encoding[0m ([35munspecified-encoding[0m)
-[7;33m************* Module notifier[0m
-network_ids/notifier.py:3:0: W0401: [35mWildcard import config[0m ([35mwildcard-import[0m)
-network_ids/notifier.py:9:18: E0602: [1;31mUndefined variable 'SMTP_USER'[0m ([1;31mundefined-variable[0m)
-network_ids/notifier.py:10:16: E0602: [1;31mUndefined variable 'ADMIN_EMAIL'[0m ([1;31mundefined-variable[0m)
-network_ids/notifier.py:12:26: E0602: [1;31mUndefined variable 'SMTP_SERVER'[0m ([1;31mundefined-variable[0m)
-network_ids/notifier.py:12:39: E0602: [1;31mUndefined variable 'SMTP_PORT'[0m ([1;31mundefined-variable[0m)
-network_ids/notifier.py:14:17: E0602: [1;31mUndefined variable 'SMTP_USER'[0m ([1;31mundefined-variable[0m)
-network_ids/notifier.py:14:28: E0602: [1;31mUndefined variable 'SMTP_PASSWORD'[0m ([1;31mundefined-variable[0m)
-network_ids/notifier.py:15:20: E0602: [1;31mUndefined variable 'SMTP_USER'[0m ([1;31mundefined-variable[0m)
-network_ids/notifier.py:15:31: E0602: [1;31mUndefined variable 'ADMIN_EMAIL'[0m ([1;31mundefined-variable[0m)
-network_ids/notifier.py:3:0: W0614: [35mUnused import(s) PCAP_FILE, DOS_THRESHOLD, PORTSCAN_THRESHOLD, BRUTEFORCE_THRESHOLD, TIME_WINDOW and LOG_FILE from wildcard import of config[0m ([35munused-wildcard-import[0m)
-detector.py:2:0: W0401: [35mWildcard import config[0m ([35mwildcard-import[0m)
-detector.py:2:0: W0614: [35mUnused import(s) PCAP_FILE and LOG_FILE from wildcard import of config[0m ([35munused-wildcard-import[0m)
 logger.py:6:9: W1514: [35mUsing open without explicitly specifying an encoding[0m ([35munspecified-encoding[0m)
-notifier.py:3:0: W0401: [35mWildcard import config[0m ([35mwildcard-import[0m)
-notifier.py:9:18: E0602: [1;31mUndefined variable 'SMTP_USER'[0m ([1;31mundefined-variable[0m)
-notifier.py:10:16: E0602: [1;31mUndefined variable 'ADMIN_EMAIL'[0m ([1;31mundefined-variable[0m)
-notifier.py:12:26: E0602: [1;31mUndefined variable 'SMTP_SERVER'[0m ([1;31mundefined-variable[0m)
-notifier.py:12:39: E0602: [1;31mUndefined variable 'SMTP_PORT'[0m ([1;31mundefined-variable[0m)
-notifier.py:14:17: E0602: [1;31mUndefined variable 'SMTP_USER'[0m ([1;31mundefined-variable[0m)
-notifier.py:14:28: E0602: [1;31mUndefined variable 'SMTP_PASSWORD'[0m ([1;31mundefined-variable[0m)
-notifier.py:15:20: E0602: [1;31mUndefined variable 'SMTP_USER'[0m ([1;31mundefined-variable[0m)
-notifier.py:15:31: E0602: [1;31mUndefined variable 'ADMIN_EMAIL'[0m ([1;31mundefined-variable[0m)
-notifier.py:3:0: W0614: [35mUnused import(s) PCAP_FILE, DOS_THRESHOLD, PORTSCAN_THRESHOLD, BRUTEFORCE_THRESHOLD, TIME_WINDOW and LOG_FILE from wildcard import of config[0m ([35munused-wildcard-import[0m)
 
 
 Report
@@ -43,11 +19,11 @@ Statistics by type
 +=========+=======+===========+===========+============+=========+
 |module   |14     |14         |=          |0.00        |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
-|class    |2      |2          |=          |0.00        |0.00     |
+|class    |2      |1          |+1.00      |0.00        |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
-|method   |6      |6          |=          |33.33       |0.00     |
+|method   |6      |3          |+3.00      |33.33       |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
-|function |10     |10         |=          |0.00        |0.00     |
+|function |10     |14         |-4.00      |0.00        |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
 
 
@@ -77,13 +53,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |203    |70.98 |205      |-2.00      |
+|code      |203    |70.98 |200      |+3.00      |
 +----------+-------+------+---------+-----------+
-|docstring |8      |2.80  |8        |=          |
+|docstring |8      |2.80  |54       |-46.00     |
 +----------+-------+------+---------+-----------+
-|comment   |12     |4.20  |12       |=          |
+|comment   |12     |4.20  |6        |+6.00      |
 +----------+-------+------+---------+-----------+
-|empty     |63     |22.03 |49       |+14.00     |
+|empty     |63     |22.03 |62       |+1.00      |
 +----------+-------+------+---------+-----------+
 
 
@@ -107,13 +83,13 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |0      |26       |26         |
+|convention |0      |8        |8          |
 +-----------+-------+---------+-----------+
 |refactor   |0      |0        |0          |
 +-----------+-------+---------+-----------+
-|warning    |10     |10       |10         |
+|warning    |2      |7        |7          |
 +-----------+-------+---------+-----------+
-|error      |16     |16       |16         |
+|error      |0      |14       |14         |
 +-----------+-------+---------+-----------+
 
 
@@ -124,13 +100,9 @@ Messages by category
 +----------------------------------------------+------+--------+---------+-----------+
 |module                                        |error |warning |refactor |convention |
 +==============================================+======+========+=========+===========+
-|notifier                                      |50.00 |20.00   |0.00     |0.00       |
+|logger                                        |0.00  |50.00   |0.00     |0.00       |
 +----------------------------------------------+------+--------+---------+-----------+
-|/home/andreym/Документы/network_ids/.pylintrc |6.25  |0.00    |0.00     |0.00       |
-+----------------------------------------------+------+--------+---------+-----------+
-|detector                                      |0.00  |20.00   |0.00     |0.00       |
-+----------------------------------------------+------+--------+---------+-----------+
-|logger                                        |0.00  |10.00   |0.00     |0.00       |
+|/home/andreym/Документы/network_ids/.pylintrc |0.00  |50.00   |0.00     |0.00       |
 +----------------------------------------------+------+--------+---------+-----------+
 
 
@@ -138,23 +110,19 @@ Messages by category
 Messages
 --------
 
-+-----------------------+------------+
-|message id             |occurrences |
-+=======================+============+
-|undefined-variable     |24          |
-+-----------------------+------------+
-|unrecognized-option    |15          |
-+-----------------------+------------+
-|wildcard-import        |12          |
-+-----------------------+------------+
-|unused-wildcard-import |12          |
-+-----------------------+------------+
-|unspecified-encoding   |6           |
-+-----------------------+------------+
++---------------------+------------+
+|message id           |occurrences |
++=====================+============+
+|unrecognized-option  |15          |
++---------------------+------------+
+|unknown-option-value |15          |
++---------------------+------------+
+|unspecified-encoding |8           |
++---------------------+------------+
 
 
 
 
 ------------------------------------------------------------------
-Your code has been rated at 4.67/10 (previous run: 3.14/10, +1.54)
+Your code has been rated at 9.88/10 (previous run: 4.65/10, +5.23)
 

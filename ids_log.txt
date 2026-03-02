@@ -5,3 +5,5 @@
 [2026-03-02 10:02:23.907103] Brute force attack detected from 10.16.10.225
 [2026-03-02 10:30:58.077117] DoS attack detected from 10.16.10.233
 [2026-03-02 10:30:58.188093] Brute force attack detected from 10.16.10.225
+[2026-03-02 16:29:54.890291] DoS attack detected from 10.16.10.233
+[2026-03-02 16:29:54.996900] Brute force attack detected from 10.16.10.225

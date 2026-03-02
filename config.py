@@ -7,8 +7,8 @@ BRUTEFORCE_THRESHOLD = 15
 TIME_WINDOW = 10  # секунд
 LOG_FILE = "ids_log.txt"
 
-SMTP_USER = ""
-SMTP_PASSWORD = "z"
-ADMIN_EMAIL = ""
-SMTP_SERVER = ""
+SMTP_USER = "andrey@vcity.sumy.ua"
+SMTP_PASSWORD = "zoraxf90st"
+ADMIN_EMAIL = "andrey@vcity.sumy.ua"
+SMTP_SERVER = "zimbra.rs.net.ua"
 SMTP_PORT = "25"
