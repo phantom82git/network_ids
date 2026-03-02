@@ -6,3 +6,9 @@ BRUTEFORCE_THRESHOLD = 15
 
 TIME_WINDOW = 10  # секунд
 LOG_FILE = "ids_log.txt"
+
+SMTP_USER = ""
+SMTP_PASSWORD = "z"
+ADMIN_EMAIL = ""
+SMTP_SERVER = ""
+SMTP_PORT = "25"

@@ -1,6 +1,7 @@
 from collections import defaultdict
 from config import *
 
+
 class Detector:
 
     def __init__(self):
@@ -16,8 +17,7 @@ class Detector:
         # ---- DoS detection ----
         self.dos_counter[src].append(timestamp)
         self.dos_counter[src] = [
-            t for t in self.dos_counter[src]
-            if timestamp - t <= TIME_WINDOW
+            t for t in self.dos_counter[src] if timestamp - t <= TIME_WINDOW
         ]
 
         # ---- Port scan detection ----

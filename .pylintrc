@@ -1,0 +1,72 @@
+[MASTER]
+# Ігнорувати непотрібні директорії
+ignore = 
+    docs,
+    venv,
+    env,
+    .git,
+    __pycache__,
+    *.pyc,
+    .vscode,
+    .idea
+
+# Використовувати 4 процеси для швидкості
+jobs = 4
+
+[MESSAGES CONTROL]
+# Вимкнути занадто суворі правила (тимчасово)
+disable = 
+    C0114,  # missing-module-docstring
+    C0115,  # missing-class-docstring
+    C0116,  # missing-function-docstring
+    R0903,  # too-few-public-methods
+    R0913,  # too-many-arguments
+    R0914,  # too-many-locals
+    R0915,  # too-many-statements
+    W0511,  # TODO, FIXME
+    C0103,  # invalid-name (для змінних)
+    R0801   # duplicate-code
+
+[FORMAT]
+# Максимальна довжина рядка (PEP 8 рекомендує 79, але ми ставимо 100)
+max-line-length = 100
+
+# Використовувати 4 пробіли для відступів
+indent-string = '    '
+
+# Очікуваний кінець рядка
+expected-line-ending-format = LF
+
+[STYLE]
+# Максимальна складність функції (чим менше, тим краще)
+max-complexity = 12
+
+# Дозволені імена змінних
+variable-rgx = [a-z_][a-z0-9_]{2,30}$
+function-rgx = [a-z_][a-z0-9_]{2,30}$
+class-rgx = [A-Z_][a-zA-Z0-9]+$
+
+[DESIGN]
+# Максимальна кількість аргументів функції
+max-args = 6
+
+# Максимальна кількість методів у класі
+max-methods = 20
+
+# Максимальна глибина вкладеності
+max-nested-blocks = 5
+
+[BASIC]
+# Дозволені імена змінних з одним символом (для лічильників)
+good-names = i, j, k, x, y, z, ex, Run, _
+
+# Змінні, які вважаються поганими
+bad-names = foo, bar, baz, toto, tutu, data
+
+[REPORTS]
+# Формат виводу з кольорами
+output-format = colorized
+
+# Показувати оцінку коду
+reports = yes
+score = yes

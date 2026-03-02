@@ -4,6 +4,7 @@ from detector import Detector
 from logger import log_event
 from notifier import send_alert
 
+
 def main():
     packets = collect_packets()
     detector = Detector()
@@ -22,6 +23,7 @@ def main():
             send_alert(alert)
     else:
         print("No attacks detected.")
+
 
 if __name__ == "__main__":
     main()
