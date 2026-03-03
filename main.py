@@ -1,3 +1,9 @@
+"""
+Головний модуль системи виявлення мережевих атак.
+
+Координує збір пакетів, аналіз, виявлення, логування та сповіщення.
+"""
+
 from collector import collect_packets
 from analyzer import analyze_packet
 from detector import Detector
@@ -6,6 +12,12 @@ from notifier import send_alert
 
 
 def main():
+    """
+    Основний цикл роботи системи IDS.
+
+    Читає пакети з файлу, аналізує кожен, передає детектору,
+    виводить результати, логує та надсилає сповіщення.
+    """
     packets = collect_packets()
     detector = Detector()
 
