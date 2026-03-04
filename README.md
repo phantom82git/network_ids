@@ -237,7 +237,6 @@ pdoc --html network_ids/
    - Завантаж з [code.visualstudio.com](https://code.visualstudio.com/download)
    - Встановлюй з налаштуваннями за замовчуванням
 
----
 
 #### Для Linux (Ubuntu/Debian):
 ```bash
@@ -249,7 +248,7 @@ sudo apt install python3 python3-pip git -y
 
 # Встановлення VS Code (опціонально)
 sudo snap install code --classic
-
+```
 ---
 
 Для macOS:
@@ -389,7 +388,7 @@ git pull origin main
 
 📊 Аналізувати власні pcap-файли
 
-Якщо виникнуть питання — створюй Issue на GitHub або пиши автору проєкту!
+Якщо виникнуть питання — пиши автору проєкту!
 
 Автор: phantom82git
 Контакти: andreymail428@gmail.com
