@@ -214,8 +214,181 @@ pdoc --html network_ids/
 Цей проєкт розповсюджується під ліцензією MIT. Деталі у файлі LICENSE.
 
 
-
 Автор: phantom82git
 Контакти: andreymail428@gmail.com
 Рік: 2026
 
+---
+
+## 🚀 Документування розгортання (для нових розробників)
+
+Цей розділ допоможе тобі швидко налаштувати проєкт на своєму комп'ютері з нуля.
+
+### 1. Встановлення необхідного програмного забезпечення
+
+#### Для Windows:
+1. **Встанови Python** (версія 3.8 або новіша)
+   - Завантаж з [python.org](https://www.python.org/downloads/)
+   - Під час встановлення ОБОВ'ЯЗКОВО постав галочку **"Add Python to PATH"**
+
+2. **Встанови Git**
+   - Завантаж з [git-scm.com](https://git-scm.com/download/win)
+   - Встановлюй з налаштуваннями за замовчуванням
+
+3. **Встанови редактор коду (VS Code)**
+   - Завантаж з [code.visualstudio.com](https://code.visualstudio.com/download)
+   - Встановлюй з налаштуваннями за замовчуванням
+
+---
+
+#### Для Linux (Ubuntu/Debian):
+```bash
+# Оновлення пакетів
+sudo apt update && sudo apt upgrade -y
+
+# Встановлення Python та Git
+sudo apt install python3 python3-pip git -y
+
+# Встановлення VS Code (опціонально)
+sudo snap install code --classic
+
+---
+
+Для macOS:
+
+# Встановлення Homebrew (якщо ще не встановлено)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Встановлення Python та Git
+brew install python3 git
+
+# Встановлення VS Code
+brew install --cask visual-studio-code
+
+---
+
+2. Клонування репозиторію
+
+Відкрий термінал (Command Prompt, PowerShell або Terminal) та виконай:
+
+# Перейди в папку, де хочеш зберігати проєкти
+cd Desktop
+
+# Склонуй репозиторій
+git clone https://github.com/phantom82git/network_ids.git
+
+# Перейди в папку проєкту
+cd network_ids
+
+---
+
+3. Налаштування віртуального середовища (рекомендовано)
+Створення віртуального середовища:
+
+# Windows
+python -m venv venv
+
+# Linux/macOS
+python3 -m venv venv
+
+Активація віртуального середовища:
+
+# Windows (Command Prompt)
+venv\Scripts\activate
+
+# Windows (PowerShell)
+.\venv\Scripts\Activate
+
+# Linux/macOS
+source venv/bin/activate
+
+Після активації в терміналі з'явиться (venv) на початку рядка.
+
+---
+
+4. Встановлення залежностей
+Переконайся, що віртуальне середовище активоване, та виконай:
+
+# Встановлення необхідних бібліотек
+pip install scapy
+
+Якщо в майбутньому з'являться додаткові залежності, їх можна буде встановити аналогічно.
+
+---
+
+5. Налаштування конфігурації
+Відкрий файл config.py у текстовому редакторі та відредагуй параметри:
+
+# Вкажи шлях до свого pcap-файлу
+PCAP_FILE = "/шлях/до/твого/файлу.pcap"
+
+# Порогові значення (можна залишити за замовчуванням)
+DOS_THRESHOLD = 1000
+PORTSCAN_THRESHOLD = 20
+BRUTEFORCE_THRESHOLD = 15
+TIME_WINDOW = 10
+
+# Налаштування email (опціонально, якщо не потрібно - залиш як є)
+SMTP_SERVER = "mail.example.com"
+SMTP_PORT = 587
+SMTP_USER = "admin@example.com"
+SMTP_PASSWORD = "password"
+ADMIN_EMAIL = "admin@example.com"
+
+---
+
+6. Запуск проєкту
+
+Переконайся, що:
+
+✅ Віртуальне середовище активоване
+
+✅ Вказано правильний шлях до pcap-файлу в config.py
+
+✅ Файл існує за вказаним шляхом
+
+Тепер запусти проєкт:
+
+    python3 main.py
+
+Якщо все зроблено правильно, ти побачиш щось подібне:
+
+🚀 Запуск системи виявлення атак...
+📁 Читання файлу: traffic.pcap
+✅ Прочитано пакетів: 1024
+🔍 Аналіз пакетів...
+🛡️ Виявлення атак...
+⚠️ DoS attack detected from 192.168.1.10
+📧 Відправлено сповіщень: 1
+
+
+7. Базові команди для роботи
+Робота з Git
+
+# Перевірити статус змін
+git status
+
+# Додати всі зміни до коміту
+git add .
+
+# Зробити коміт
+git commit -m "Опис змін"
+
+# Завантажити зміни на GitHub
+git push origin main
+
+# Отримати останні зміни з GitHub
+git pull origin main
+
+---
+
+9. Що далі?
+Після успішного запуску ти можеш:
+
+🔧 Змінювати порогові значення в config.py
+
+📝 Додавати нові алгоритми виявлення в detector.py
+
+📊 Аналізувати власні pcap-файли
+
+Якщо виникнуть питання — створюй Issue на GitHub або пиши автору проєкту!
